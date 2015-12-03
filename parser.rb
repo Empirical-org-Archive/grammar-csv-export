@@ -16,7 +16,7 @@ class Parser
   # -Jzw0qjO5owyFPUAwDGM -- "Meanwhile"
   # '-K2nXnevRx0EgXW07mzg' --  no questions
   # -Jzw0qjLNEeZAERlRksx -- correct messy sentences
-  # -K2iV539jnRtCyoWKh3N" -- 'Colons in lists' is missing concept level 0 
+  # -K2iV539jnRtCyoWKh3N" -- 'Colons in lists' is missing concept level 0
 
 
   def json_to_array
@@ -25,7 +25,6 @@ class Parser
         ccss = concept[1]["standard"]["name"]
         concept_level_0 = concept[1]['concept_level_0']['name']
         concept_level_1 = concept[1]['concept_level_1']['name']
-        puts concept_level_0
         concept[1]["questions"].each do |question|
           question_uid = question.first[1..-1]
           answers = question[1]['answers']
